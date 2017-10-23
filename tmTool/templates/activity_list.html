@@ -1,0 +1,9 @@
+<h1>Activities</h1>
+<ul>
+    {% for activity in object_list %}
+    <li>{{ activity.name }}  
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url "activity_new" %}">New</a>
